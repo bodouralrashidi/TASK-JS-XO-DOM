@@ -10,6 +10,7 @@ const winningConditions = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+
 var gamestate = ["", "", "", "", "", "", "", "", ""];
 
 document
@@ -18,7 +19,8 @@ document
 
 function boxIsClicked(box) {
   let boxclicked = box.target;
-  // console.log(boxclicked.getAttribute("index"));
+  //console.log("boxxx clicked",boxclicked);
+  //console.log(boxclicked.getAttribute("index"));
 
   // console.log(boxclicked.innerHTML)
   player(boxclicked);
